@@ -5,4 +5,4 @@
 
 Design:
 
-![Alt text](<Design Document-1.png>)
+![Alt text](<Design Document.png>)
