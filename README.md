@@ -7,6 +7,7 @@
 * Pooja Sharma - 2022OG04007
 * Bhavani Shankar Sunkara - 2022OG04022
 
+# Git Link: https://github.com/bsunkar/Spotify-Music-Recommendation-Platform/blob/main/README.md
 # Contents:
 
 * Architecture Design walk through as per the requirments
