@@ -25,7 +25,6 @@ consumer = KafkaConsumer('spotify',
 client = MongoClient('mongodb://localhost:27017/')
 db = client['spotifydb']
 collection = db['Tracks']
-print(consumer)
 # Fetch data from Kafka and store it in MongoDB
 for message in consumer:
     print(message)
