@@ -1,0 +1,41 @@
+Hello everyone! Today, I’m excited to walk you through how we can secure healthcare and member documents seamlessly during claim processing, billing workflows, or any health‑insurance‑related platform.
+In many scenarios, documents such as claims, lab reports, or member records are downloaded for downstream or upstream processing. However, this creates a risk of exposing PHI/PII. To address this, we built a solution that can be plugged into any interface or claims platform to automatically secure sensitive information before documents leave the system.
+Our core motto for this MVP is simple: ➡️ Ensure healthcare data stays protected whenever someone downloads or takes documents offline.
+Today, I’ll show you how our redaction engine helps enforce PHI/PII protection in real time.
+
+🚀 Let’s Begin the Demo
+This MVP demonstrates how we secure documents when users attempt to print or download them. We’ve implemented role-based access control (RBAC) with two distinct roles:
+
+🔒 1. Restricted Users
+A restricted user can:
+* View original documents inside the platform
+* But cannot download PHI/PII
+When they attempt to download:
+* The system automatically redacts PHI/PII
+* Then downloads the sanitized version only
+Let me log in as a restricted user…
+You can see the label here: Restricted Access — originals viewable, downloads are redacted for security.
+On the left, we have sample documents containing member‑level information. When I click Download… You’ll notice the system shows “Redacting and Downloading…”
+Once downloaded, the file opens with all sensitive member details redacted. That’s exactly how restricted mode protects data from exposure.
+
+🔓 2. Unrestricted Users
+Now, let me sign out and log in as an unrestricted user.
+Unrestricted access means:
+* PHI/PII is automatically redacted even for viewing
+* And of course, downloads are also redacted
+As soon as I log in, you’ll see that the documents start loading with redaction applied. There’s a brief buffering time as the system sanitizes content.
+Once loaded, you can clearly see that all member information is masked, even before interacting with the document.
+If I download the file, the same redaction is applied—protecting the data at every step.
+
+⚙️ Scalability & Integration
+This platform—called SHIELD—is designed to secure healthcare documents with enterprise‑grade reliability.
+Key highlights:
+* Works with single‑page or multi‑page documents
+* Handles hundreds of pages efficiently
+* Built with scalable backend processing
+* Can be integrated as a wrapper into any existing interface or platform
+* Consistently protects documents used for downstream or upstream operations
+
+🎯 Conclusion
+Thank you, everyone, for joining this demo. With this MVP, we’ve demonstrated a powerful mechanism to secure healthcare documentation through automated redaction, ensuring member data stays protected—no matter who downloads it or from which system.
+Thank you!
